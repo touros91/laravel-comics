@@ -107,7 +107,6 @@ header .container nav input[type=search] {
 
 main {
   margin: 20px 0;
-  background-color: #1C1C1C;
 }
 
 main .hero {
@@ -124,12 +123,16 @@ main .hero img {
      object-position: 0px 0px;
 }
 
-main .container {
-  padding: 30px 0;
+main .current {
+  background-color: #1C1C1C;
+}
+
+main .current .container {
+  padding: 30px 0 20px 0;
   position: relative;
 }
 
-main .container .current-series {
+main .current .container .current-series {
   padding: 7px 21px;
   background-color: #0282F9;
   color: white;
@@ -140,24 +143,24 @@ main .container .current-series {
   top: -20px;
 }
 
-main .container .comics {
+main .current .container .comics {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 15px 0 40px 0;
 }
 
-main .container .comics .single-comic {
+main .current .container .comics .single-comic {
   width: calc(16.6666666667% - 20px);
   margin: 0px 10px;
 }
 
-main .container .comics .single-comic .image {
+main .current .container .comics .single-comic .image {
   width: 140px;
   height: 140px;
 }
 
-main .container .comics .single-comic .image img {
+main .current .container .comics .single-comic .image img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -166,18 +169,18 @@ main .container .comics .single-comic .image img {
      object-position: 0px 0px;
 }
 
-main .container .comics .single-comic h4 {
+main .current .container .comics .single-comic h4 {
   color: #F4F2E7;
   font-size: 14px;
   margin-top: 10px;
 }
 
-main .container .btn {
+main .current .container .btn {
   display: flex;
   justify-content: center;
 }
 
-main .container .btn button {
+main .current .container .btn button {
   border: none;
   padding: 10px 42px;
   background-color: #0282F9;
@@ -185,5 +188,44 @@ main .container .btn button {
   font-weight: bold;
   font-size: 13px;
   cursor: pointer;
+}
+
+main .third-section {
+  background-color: #0282F9;
+  padding: 40px 0;
+}
+
+main .third-section .container ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+main .third-section .container ul li {
+  list-style: none;
+  display: flex;
+}
+
+main .third-section .container ul li .icon {
+  max-width: 50px;
+  align-self: center;
+}
+
+main .third-section .container ul li .icon img {
+  width: 100%;
+}
+
+main .third-section .container ul li .icon.locator {
+  max-width: 35px;
+}
+
+main .third-section .container ul li .icon.locator img {
+  width: 100%;
+}
+
+main .third-section .container ul li h4 {
+  color: white;
+  align-self: center;
+  font-weight: 500;
+  margin-left: 15px;
 }
 
