@@ -48,6 +48,11 @@ header {
                             border-bottom: 5px solid $mainColor;
                             padding-bottom: 50px;
                         }
+                        &.active {
+                            color: $mainColor;
+                            border-bottom: 5px solid $mainColor;
+                            padding-bottom: 50px;
+                        }
                         &:last-child i {
                             color: $mainColor;
                             font-size: 13px;
