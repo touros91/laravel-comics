@@ -4,36 +4,68 @@ header {
         width: 100%;
         background-color: $mainColor;
         padding: 4px;
+        margin-bottom: 20px;
         .container {
             display: flex;
             justify-content: flex-end;
-            span {
+            div {
                 color: $secondColor;
                 font-size: 10px;
                 margin-left: 20px;
+                display: flex;
+                .additional {
+                    margin-left: 3px;
+                }
             }
+            .sm {
+                font-size: 7px;
+            } 
         }
     }
     .container {
         display: flex;
         justify-content: space-between;
         .logo {
-            max-width: 60px;
+            max-width: 80px;
             img {
                 width: 100%;
             }
         }
         nav {
             align-self: center;
+            display: flex;
             ul {
                 list-style: none;
                 li {
                     display: inline-block;
-                    margin-left: 20px;
+                    margin-left: 15px;
                     a {
                         text-decoration: none;
+                        color: $thirdColor;
+                        font-weight: bold;
+                        &:hover {
+                            color: $mainColor;
+                            border-bottom: 5px solid $mainColor;
+                            padding-bottom: 50px;
+                        }
+                        &:last-child i {
+                            color: $mainColor;
+                            font-size: 13px;
+                            margin-left: 5px;
+                        }
                     }
+                    
                 }
+            }
+            input[type=search] {
+                border: none;
+                color: $thirdColor;
+                font-weight: bold;
+                border-bottom: 3px solid $mainColor;
+                padding-bottom: 5px;
+                margin-left: 50px;
+                text-align: end;
+                outline: none;
             }
         }
         

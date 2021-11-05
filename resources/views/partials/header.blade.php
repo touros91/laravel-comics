@@ -1,8 +1,8 @@
 <header>
     <div class="blue-line">
         <div class="container">
-            <span>DC POWER VISA®</span>
-            <span>ADDITIONAL DC SITES <i class="fas fa-caret-down"></i></span>
+            <div class="dc-power">DC POWER<span class="sm">SM</span> VISA ®</div>
+            <div>ADDITIONAL DC SITES <i class="additional fas fa-caret-down"></i></div>
         </div>
     </div>
     <div class="container">
@@ -20,8 +20,9 @@
                 <li><a href="#">VIDEOS</a></li>
                 <li><a href="#">FANS</a></li>
                 <li><a href="#">NEWS</a></li>
-                <li><a href="#">SHOP</a></li>
+                <li><a href="#">SHOP <i class="fas fa-caret-down"></i></a></li>
             </ul>
+            <input type="search" placeholder="Search">
         </nav>
     </div>
 </header>

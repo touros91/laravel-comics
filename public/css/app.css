@@ -1,18 +1,18 @@
-@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;
+@import url(https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;
 
-300;400;500;700;900&display=swap);* {
+700&display=swap);* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 .container {
-  max-width: 80%;
+  max-width: 75%;
   margin: 0 auto;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "PT Sans Narrow", sans-serif;
 }
 
 header .blue-line {
@@ -20,6 +20,7 @@ header .blue-line {
   width: 100%;
   background-color: #0282F9;
   padding: 4px;
+  margin-bottom: 20px;
 }
 
 header .blue-line .container {
@@ -27,10 +28,19 @@ header .blue-line .container {
   justify-content: flex-end;
 }
 
-header .blue-line .container span {
+header .blue-line .container div {
   color: white;
   font-size: 10px;
   margin-left: 20px;
+  display: flex;
+}
+
+header .blue-line .container div .additional {
+  margin-left: 3px;
+}
+
+header .blue-line .container .sm {
+  font-size: 7px;
 }
 
 header .container {
@@ -39,7 +49,7 @@ header .container {
 }
 
 header .container .logo {
-  max-width: 60px;
+  max-width: 80px;
 }
 
 header .container .logo img {
@@ -48,6 +58,7 @@ header .container .logo img {
 
 header .container nav {
   align-self: center;
+  display: flex;
 }
 
 header .container nav ul {
@@ -56,10 +67,35 @@ header .container nav ul {
 
 header .container nav ul li {
   display: inline-block;
-  margin-left: 20px;
+  margin-left: 15px;
 }
 
 header .container nav ul li a {
   text-decoration: none;
+  color: #4F4948;
+  font-weight: bold;
+}
+
+header .container nav ul li a:hover {
+  color: #0282F9;
+  border-bottom: 5px solid #0282F9;
+  padding-bottom: 50px;
+}
+
+header .container nav ul li a:last-child i {
+  color: #0282F9;
+  font-size: 13px;
+  margin-left: 5px;
+}
+
+header .container nav input[type=search] {
+  border: none;
+  color: #4F4948;
+  font-weight: bold;
+  border-bottom: 3px solid #0282F9;
+  padding-bottom: 5px;
+  margin-left: 50px;
+  text-align: end;
+  outline: none;
 }
 
