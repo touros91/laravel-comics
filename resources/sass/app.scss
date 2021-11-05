@@ -1,1 +1,10 @@
-//
+@import './partials/variables.scss';
+@import './partials/reset.scss';
+@import './partials/common.scss';
+@import './partials/header.scss';
+@import './partials/main.scss';
+@import './partials/footer.scss';
+
+
+// Google Font Roboto 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');

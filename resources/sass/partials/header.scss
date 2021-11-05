@@ -1,0 +1,41 @@
+header {
+    .blue-line {
+        height: 20px;
+        width: 100%;
+        background-color: $mainColor;
+        padding: 4px;
+        .container {
+            display: flex;
+            justify-content: flex-end;
+            span {
+                color: $secondColor;
+                font-size: 10px;
+                margin-left: 20px;
+            }
+        }
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
+        .logo {
+            max-width: 60px;
+            img {
+                width: 100%;
+            }
+        }
+        nav {
+            align-self: center;
+            ul {
+                list-style: none;
+                li {
+                    display: inline-block;
+                    margin-left: 20px;
+                    a {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        
+    }
+}
