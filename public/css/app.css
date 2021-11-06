@@ -1,6 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;
-
-700&display=swap);* {
+@import url(https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap);* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -22,98 +20,109 @@ header .blue-line {
   padding: 4px;
   margin-bottom: 20px;
 }
-
 header .blue-line .container {
   display: flex;
   justify-content: flex-end;
 }
-
 header .blue-line .container div {
   color: white;
   font-size: 10px;
   margin-left: 20px;
   display: flex;
 }
-
 header .blue-line .container div .additional {
   margin-left: 3px;
 }
-
-header .blue-line .container .sm {
+header .blue-line .container sup {
   font-size: 7px;
+  padding-right: 3px;
 }
-
+header .blue-line a {
+  text-decoration: none;
+  color: white;
+}
 header .container {
   display: flex;
   justify-content: space-between;
 }
-
 header .container .logo {
   max-width: 80px;
 }
-
 header .container .logo img {
   width: 100%;
 }
-
 header .container nav {
   align-self: center;
   display: flex;
 }
-
 header .container nav ul {
   list-style: none;
 }
-
 header .container nav ul li {
   display: inline-block;
-  margin-left: 15px;
+  margin-left: 18px;
 }
-
 header .container nav ul li a {
   text-decoration: none;
   color: #4F4948;
   font-weight: bold;
+  font-size: 15px;
 }
-
 header .container nav ul li a:hover {
   color: #0282F9;
   border-bottom: 5px solid #0282F9;
   padding-bottom: 50px;
 }
-
 header .container nav ul li a.active {
   color: #0282F9;
   border-bottom: 5px solid #0282F9;
   padding-bottom: 50px;
 }
-
 header .container nav ul li a:last-child i {
   color: #0282F9;
   font-size: 13px;
   margin-left: 5px;
 }
-
-header .container nav input[type=search] {
+header .container nav .search-bar {
+  display: flex;
+  justify-content: end;
+  position: relative;
+}
+header .container nav .search-bar input {
   border: none;
-  color: #4F4948;
-  font-weight: bold;
   border-bottom: 3px solid #0282F9;
   padding-bottom: 5px;
+  padding-right: 15px;
   margin-left: 50px;
   text-align: end;
   outline: none;
 }
-
-main {
-  margin: 20px 0;
+header .container nav .search-bar input::-moz-placeholder {
+  color: #4F4948;
+  font-weight: bold;
+}
+header .container nav .search-bar input:-ms-input-placeholder {
+  color: #4F4948;
+  font-weight: bold;
+}
+header .container nav .search-bar input::placeholder {
+  color: #4F4948;
+  font-weight: bold;
+}
+header .container nav .search-bar i {
+  color: #4F4948;
+  position: absolute;
+  right: 0px;
+  bottom: 7px;
 }
 
+main {
+  margin-top: 20px;
+}
 main .hero {
   width: 100%;
   height: 270px;
 }
-
 main .hero img {
   width: 100%;
   height: 100%;
@@ -122,16 +131,13 @@ main .hero img {
   -o-object-position: 0px 0px;
      object-position: 0px 0px;
 }
-
 main .current {
   background-color: #1C1C1C;
 }
-
 main .current .container {
   padding: 30px 0 20px 0;
   position: relative;
 }
-
 main .current .container .current-series {
   padding: 7px 21px;
   background-color: #0282F9;
@@ -142,24 +148,23 @@ main .current .container .current-series {
   position: absolute;
   top: -20px;
 }
-
 main .current .container .comics {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 15px 0 40px 0;
 }
-
+main .current .container .comics a {
+  text-decoration: none;
+}
 main .current .container .comics .single-comic {
   width: calc(16.6666666667% - 20px);
-  margin: 0px 10px;
+  margin: 20px 10px;
 }
-
 main .current .container .comics .single-comic .image {
   width: 140px;
   height: 140px;
 }
-
 main .current .container .comics .single-comic .image img {
   width: 100%;
   height: 100%;
@@ -168,18 +173,16 @@ main .current .container .comics .single-comic .image img {
   -o-object-position: 0px 0px;
      object-position: 0px 0px;
 }
-
 main .current .container .comics .single-comic h4 {
   color: #F4F2E7;
   font-size: 14px;
   margin-top: 10px;
+  width: 140px;
 }
-
 main .current .container .btn {
   display: flex;
   justify-content: center;
 }
-
 main .current .container .btn button {
   border: none;
   padding: 10px 42px;
@@ -189,39 +192,32 @@ main .current .container .btn button {
   font-size: 13px;
   cursor: pointer;
 }
-
 main .third-section {
   background-color: #0282F9;
   padding: 40px 0;
 }
-
 main .third-section .container ul {
   display: flex;
   justify-content: space-between;
+  padding: 0 30px;
 }
-
 main .third-section .container ul li {
   list-style: none;
   display: flex;
 }
-
 main .third-section .container ul li .icon {
   max-width: 50px;
   align-self: center;
 }
-
 main .third-section .container ul li .icon img {
   width: 100%;
 }
-
 main .third-section .container ul li .icon.locator {
   max-width: 35px;
 }
-
 main .third-section .container ul li .icon.locator img {
   width: 100%;
 }
-
 main .third-section .container ul li h4 {
   color: white;
   align-self: center;
@@ -229,3 +225,77 @@ main .third-section .container ul li h4 {
   margin-left: 15px;
 }
 
+footer .footer-top {
+  background-image: url("/images/dc-logo-bg.png"), url("/images/footer-bg.jpg");
+  background-position: left 80% bottom 45%, left top;
+  background-size: 500px, cover;
+  background-repeat: no-repeat, no-repeat;
+  padding: 25px 0;
+}
+footer .footer-top .container .footer-lists {
+  display: flex;
+}
+footer .footer-top .container .footer-lists h4 {
+  color: white;
+  margin-bottom: 15px;
+  font-size: 17px;
+}
+footer .footer-top .container .footer-lists ul {
+  margin-right: 50px;
+}
+footer .footer-top .container .footer-lists ul li {
+  list-style: none;
+  margin-top: 5px;
+}
+footer .footer-top .container .footer-lists ul li a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #777A7A;
+}
+footer .footer-top .container .footer-lists .shop {
+  margin-top: 25px;
+}
+footer .footer-top .container .copyright {
+  color: #777A7A;
+  font-size: 14px;
+  margin-top: 20px;
+}
+footer .footer-top .container .copyright a {
+  text-decoration: none;
+  color: #0282F9;
+}
+footer .footer-bottom {
+  background-color: #303030;
+  height: 100px;
+}
+footer .footer-bottom .container {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer-bottom .container .btn button {
+  border: 1px solid #0282F9;
+  background-color: #303030;
+  padding: 10px;
+  cursor: pointer;
+}
+footer .footer-bottom .container .btn button a {
+  text-decoration: none;
+  width: 140px;
+  color: #F2F8E5;
+  font-weight: bold;
+}
+footer .footer-bottom .container .social {
+  display: flex;
+}
+footer .footer-bottom .container .social div:first-child {
+  font-size: 20px;
+  color: #0282F9;
+  font-weight: bold;
+  align-self: center;
+  margin-right: 10px;
+}
+footer .footer-bottom .container .social .social-icon {
+  margin-left: 15px;
+}

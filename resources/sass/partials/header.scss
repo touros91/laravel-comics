@@ -17,9 +17,14 @@ header {
                     margin-left: 3px;
                 }
             }
-            .sm {
+            sup {
                 font-size: 7px;
-            } 
+                padding-right: 3px;
+            }
+        }
+        a {
+            text-decoration: none;
+            color: $secondColor;
         }
     }
     .container {
@@ -38,11 +43,12 @@ header {
                 list-style: none;
                 li {
                     display: inline-block;
-                    margin-left: 15px;
+                    margin-left: 18px;
                     a {
                         text-decoration: none;
                         color: $thirdColor;
                         font-weight: bold;
+                        font-size: 15px;
                         &:hover {
                             color: $mainColor;
                             border-bottom: 5px solid $mainColor;
@@ -62,17 +68,30 @@ header {
                     
                 }
             }
-            input[type=search] {
-                border: none;
-                color: $thirdColor;
-                font-weight: bold;
-                border-bottom: 3px solid $mainColor;
-                padding-bottom: 5px;
-                margin-left: 50px;
-                text-align: end;
-                outline: none;
+            .search-bar {
+                display: flex;
+                justify-content: end;
+                position: relative;
+                input {
+                    border: none;
+                    border-bottom: 3px solid $mainColor;
+                    padding-bottom: 5px;
+                    padding-right: 15px;
+                    margin-left: 50px;
+                    text-align: end;
+                    outline: none;
+                    &::placeholder{
+                        color: $thirdColor;
+                        font-weight: bold;
+                    }
+                }
+                i{
+                    color: $thirdColor;
+                    position: absolute;
+                    right: 0px;
+                    bottom: 7px;
+                }
             }
-        }
-        
+        }  
     }
 }

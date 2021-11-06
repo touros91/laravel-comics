@@ -16,10 +16,12 @@
             <div class="comics">
                 @foreach ($fumetti as $fumetto)
                     <div class="single-comic">
-                        <div class="image">
-                            <img src="{{$fumetto["thumb"]}}" alt="">
-                        </div>
-                        <h4>{{strtoupper($fumetto["series"])}}</h4>
+                        <a href="#">
+                            <div class="image">
+                                <img src="{{$fumetto["thumb"]}}" alt="">
+                            </div>
+                            <h4>{{strtoupper($fumetto["series"])}}</h4>
+                        </a>
                     </div>
                 @endforeach
             </div>

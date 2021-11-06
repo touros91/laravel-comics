@@ -1,0 +1,81 @@
+footer {
+    .footer-top {
+        background-image: url('/images/dc-logo-bg.png'), url('/images/footer-bg.jpg');
+        background-position: left 80% bottom 45%, left top;
+        background-size: 500px, cover;
+        background-repeat: no-repeat, no-repeat;
+        padding: 25px 0;
+        .container {
+            .footer-lists {
+                display: flex;
+                h4 {
+                    color: $secondColor;
+                    margin-bottom: 15px;
+                    font-size: 17px;
+                }
+                ul {
+                    margin-right: 50px;
+                    li {
+                        list-style: none;
+                        margin-top: 5px;
+                        a {
+                            font-size: 14px;
+                            text-decoration: none;
+                            color: #777A7A;
+                        }
+                    }
+                }
+                .shop {
+                    margin-top: 25px;
+                }
+            }
+            .copyright {
+                color: #777A7A;
+                font-size: 14px;
+                margin-top: 20px;
+                a {
+                    text-decoration: none;
+                    color: $mainColor;
+                }
+            }
+        }
+    }
+    .footer-bottom {
+        background-color: #303030;
+        height: 100px;
+        .container {
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .btn {
+                button {
+                    border: 1px solid $mainColor;
+                    background-color: #303030;
+                    padding: 10px;
+                    cursor: pointer;
+                    a {
+                        text-decoration: none;
+                        width: 140px;
+                        color: #F2F8E5;
+                        font-weight: bold;
+                    }
+                }
+            }
+            .social {
+                display: flex;
+                div:first-child {
+                    font-size: 20px;
+                    color: $mainColor;
+                    font-weight: bold;
+                    align-self: center;
+                    margin-right: 10px;
+                }
+                .social-icon {
+                    margin-left: 15px;
+                }
+            }
+        }
+        
+    }
+}
